@@ -15,6 +15,7 @@
                 <tr>
                     <th class="border px-4 py-2">Judul</th>
                     <th class="border px-4 py-2">Deskripsi</th>
+                    <th class="border px-4 py-2">Genre</th>
                     <th class="border px-4 py-2">Tahun Rilis</th>
                     <th class="border px-4 py-2">Aksi</th>
                 </tr>
@@ -24,6 +25,7 @@
                     <tr>
                         <td class="border px-4 py-2">{{ $movie->title }}</td>
                         <td class="border px-4 py-2">{{ $movie->description }}</td>
+                        <td class="border px-4 py-2">{{ $movie->genre }}</td>
                         <td class="border px-4 py-2">{{ $movie->release_year }}</td>
                         <td class="border px-4 py-2">
                             <a href="{{ route('movies.edit', $movie->id) }}" class="text-blue-500">Edit</a>

@@ -23,6 +23,7 @@ class MovieController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
+            'genre' => 'required',
             'director' => 'required',
             'release_year' => 'required|numeric',
         ]);
@@ -41,6 +42,7 @@ class MovieController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
+            'genre' => 'required',
             'director' => 'required',
             'release_year' => 'required|numeric',
         ]);
